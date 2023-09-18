@@ -1,1 +1,34 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Value Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>U-Value Calculator</h1>
+    </header>
+    <main>
+        <!-- Input fields for building component layers -->
+        <div id="layers">
+            <!-- You can dynamically generate these based on user input -->
+            <div class="layer">
+                <input type="text" class="thickness" placeholder="Thickness (mm)">
+                <input type="text" class="thermal-conductivity" placeholder="Thermal Conductivity (W/m·K)">
+            </div>
+        </div>
+        <button id="add-layer">Add Layer</button>
+        
+        <!-- Display results here -->
+        <div id="results">
+            <p>Heat Loss: <span id="heat-loss">0</span> W</p>
+            <p>Moisture Problems: <span id="moisture-problems">None</span></p>
+            <!-- Add more result fields as needed -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
